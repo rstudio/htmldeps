@@ -6,7 +6,7 @@ html_dependency_jquery <- function()  {
   htmltools::htmlDependency(
     name = "hd-jquery",
     version = "1.11.3",
-    src = system.file("rmd/h/jquery-1.11.3"),
+    src = system.file("rmd/h/jquery"),
     script = "jquery.min.js")
 }
 
@@ -18,7 +18,7 @@ html_dependency_jqueryui <- function() {
   htmltools::htmlDependency(
     name = "hd-jqueryui",
     version = "1.11.4",
-    src = system.file("rmd/h/jqueryui-1.11.4"),
+    src = system.file("rmd/h/jqueryui"),
     script = "jquery-ui.min.js")
 }
 
@@ -34,7 +34,7 @@ html_dependency_bootstrap <- function(theme) {
   htmltools::htmlDependency(
     name = "hd-bootstrap",
     version = "3.3.5",
-    src = system.file("rmd/h/bootstrap-3.3.5"),
+    src = system.file("rmd/h/bootstrap"),
     meta = list(viewport = "width=device-width, initial-scale=1"),
     script = c(
       "js/bootstrap.min.js",
@@ -52,7 +52,7 @@ html_dependency_tocify <- function() {
   htmltools::htmlDependency(
     name = "hd-tocify",
     version = "1.9.1",
-    src = system.file("rmd/h/tocify-1.9.1"),
+    src = system.file("rmd/h/tocify"),
     script = "jquery.tocify.js",
     stylesheet = "jquery.tocify.css")
 }
@@ -80,7 +80,7 @@ html_dependency_navigation <- function(code_menu, source_embed) {
   htmltools::htmlDependency(
     name = "hd-navigation",
     version = "1.1",
-    src = system.file("rmd/h/navigation-1.1"),
+    src = system.file("rmd/h/navigation"),
     script = script)
 }
 
@@ -107,6 +107,6 @@ html_dependency_ionicons <- function() {
   htmltools::htmlDependency(
     name = "hd-ionicons",
     version = "2.0.1",
-    src = system.file("rmd/h/ionicons-2.0.1"),
+    src = system.file("rmd/h/ionicons"),
     stylesheet = "css/ionicons.min.css")
 }
