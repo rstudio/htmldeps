@@ -10,7 +10,7 @@ system_file <- function(file) {
 html_dependency_jquery <- function()  {
 
   htmltools::htmlDependency(
-    name = "hd-jquery",
+    name = "jquery",
     version = "1.11.3",
     src = system_file(file = "rmd/h/jquery"),
     script = "jquery.min.js")
@@ -22,7 +22,7 @@ html_dependency_jquery <- function()  {
 html_dependency_jqueryui <- function() {
 
   htmltools::htmlDependency(
-    name = "hd-jqueryui",
+    name = "jqueryui",
     version = "1.11.4",
     src = system_file(file = "rmd/h/jqueryui"),
     script = "jquery-ui.min.js")
@@ -38,7 +38,7 @@ html_dependency_bootstrap <- function(theme) {
   }
 
   htmltools::htmlDependency(
-    name = "hd-bootstrap",
+    name = "bootstrap",
     version = "3.3.5",
     src = system_file(file = "rmd/h/bootstrap"),
     meta = list(viewport = "width=device-width, initial-scale=1"),
@@ -56,38 +56,11 @@ html_dependency_bootstrap <- function(theme) {
 html_dependency_tocify <- function() {
 
   htmltools::htmlDependency(
-    name = "hd-tocify",
+    name = "tocify",
     version = "1.9.1",
     src = system_file(file = "rmd/h/tocify"),
     script = "jquery.tocify.js",
     stylesheet = "jquery.tocify.css")
-}
-
-#' An HTML dependency for navigation
-#'
-#' We can build a script list that contains
-#' `tabsets.js` and either of (or both)
-#' `codefolding.js` or `sourceembed.js`.
-#' @importFrom htmltools htmlDependency
-#' @export
-html_dependency_navigation <- function(code_menu, source_embed) {
-
-  # Dynamically build script list
-  script <- c("tabsets.js")
-
-  if (code_menu) {
-    script <- c(script, "codefolding.js")
-  }
-
-  if (source_embed) {
-    script <- c(script, "sourceembed.js")
-  }
-
-  htmltools::htmlDependency(
-    name = "hd-navigation",
-    version = "1.1",
-    src = system_file(file = "rmd/h/navigation"),
-    script = script)
 }
 
 #' An HTML dependency for FontAwesome
@@ -96,7 +69,7 @@ html_dependency_navigation <- function(code_menu, source_embed) {
 html_dependency_font_awesome <- function() {
 
   htmltools::htmlDependency(
-    name = "hd-font-awesome",
+    name = "font-awesome",
     version = "5.0.13",
     src = system_file(file = "rmd/h/fontawesome"),
     script = c(
@@ -111,7 +84,7 @@ html_dependency_font_awesome <- function() {
 html_dependency_ionicons <- function() {
 
   htmltools::htmlDependency(
-    name = "hd-ionicons",
+    name = "ionicons",
     version = "2.0.1",
     src = system.file(file = "rmd/h/ionicons"),
     stylesheet = "css/ionicons.min.css")
