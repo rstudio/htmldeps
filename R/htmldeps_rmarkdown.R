@@ -1,3 +1,9 @@
+#' A wrapper for `system.file()`
+#' @noRd
+system_file <- function(file) {
+  system.file(file, package = "htmldeps")
+}
+
 #' An HTML dependency using `jquery.js`
 #' @importFrom htmltools htmlDependency
 #' @export
@@ -6,7 +12,7 @@ html_dependency_jquery <- function()  {
   htmltools::htmlDependency(
     name = "hd-jquery",
     version = "1.11.3",
-    src = system.file("rmd/h/jquery"),
+    src = system_file(file = "rmd/h/jquery"),
     script = "jquery.min.js")
 }
 
@@ -18,7 +24,7 @@ html_dependency_jqueryui <- function() {
   htmltools::htmlDependency(
     name = "hd-jqueryui",
     version = "1.11.4",
-    src = system.file("rmd/h/jqueryui"),
+    src = system_file(file = "rmd/h/jqueryui"),
     script = "jquery-ui.min.js")
 }
 
@@ -34,7 +40,7 @@ html_dependency_bootstrap <- function(theme) {
   htmltools::htmlDependency(
     name = "hd-bootstrap",
     version = "3.3.5",
-    src = system.file("rmd/h/bootstrap"),
+    src = system_file(file = "rmd/h/bootstrap"),
     meta = list(viewport = "width=device-width, initial-scale=1"),
     script = c(
       "js/bootstrap.min.js",
@@ -52,7 +58,7 @@ html_dependency_tocify <- function() {
   htmltools::htmlDependency(
     name = "hd-tocify",
     version = "1.9.1",
-    src = system.file("rmd/h/tocify"),
+    src = system_file(file = "rmd/h/tocify"),
     script = "jquery.tocify.js",
     stylesheet = "jquery.tocify.css")
 }
@@ -80,7 +86,7 @@ html_dependency_navigation <- function(code_menu, source_embed) {
   htmltools::htmlDependency(
     name = "hd-navigation",
     version = "1.1",
-    src = system.file("rmd/h/navigation"),
+    src = system_file(file = "rmd/h/navigation"),
     script = script)
 }
 
@@ -92,7 +98,7 @@ html_dependency_font_awesome <- function() {
   htmltools::htmlDependency(
     name = "hd-font-awesome",
     version = "5.0.13",
-    src = system.file("rmd/h/fontawesome"),
+    src = system_file(file = "rmd/h/fontawesome"),
     script = c(
       "js/fontawesome-all.min.js",
       "js/fa-v4-shims.min.js"),
@@ -107,6 +113,6 @@ html_dependency_ionicons <- function() {
   htmltools::htmlDependency(
     name = "hd-ionicons",
     version = "2.0.1",
-    src = system.file("rmd/h/ionicons"),
+    src = system.file(file = "rmd/h/ionicons"),
     stylesheet = "css/ionicons.min.css")
 }
