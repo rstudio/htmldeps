@@ -1,1 +1,4 @@
 ^README\.Rmd$
+^htmldeps\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
