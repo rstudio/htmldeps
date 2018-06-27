@@ -67,15 +67,14 @@ html_dependency_tocify <- function() {
 #' @importFrom htmltools htmlDependency
 #' @export
 html_dependency_font_awesome <- function() {
-
-  htmltools::htmlDependency(
-    name = "font-awesome",
-    version = "5.0.13",
-    src = system_file(file = "rmd/h/fontawesome"),
-    script = c(
-      "js/fontawesome-all.min.js",
-      "js/fa-v4-shims.min.js"),
-    stylesheet = "css/fa-svg-with-js.css")
+  htmlDependency(
+    "font-awesome",
+    "5.1.0",
+    src = rmarkdown_system_file("rmd/h/fontawesome"),
+    stylesheet = c(
+      "css/all.css",
+      "css/v4-shims.css")
+  )
 }
 
 #' An HTML dependency for ionicons
