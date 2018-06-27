@@ -9,7 +9,7 @@ status](https://www.r-pkg.org/badges/version/htmldeps)](https://cran.r-project.o
 ## Centralized HTML Dependencies with **htmldeps**
 
 The **htmldeps** package will provide `html_dependency_...()` functions
-primarily to support the following packages: **shiny**, **rmarkdown**,
+to support the following packages: **shiny**, **rmarkdown**,
 **flexdashboard**, **htmlwidgets**, and **leaflet**.
 
 ## Code of Conduct

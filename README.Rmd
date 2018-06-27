@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 ## Centralized HTML Dependencies with **htmldeps**
 
-The **htmldeps** package will provide `html_dependency_...()` functions primarily to support the following packages: **shiny**, **rmarkdown**, **flexdashboard**, **htmlwidgets**, and **leaflet**.
+The **htmldeps** package will provide `html_dependency_...()` functions to support the following packages: **shiny**, **rmarkdown**, **flexdashboard**, **htmlwidgets**, and **leaflet**.
 
 ## Code of Conduct
 
