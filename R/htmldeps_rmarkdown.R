@@ -29,6 +29,7 @@ html_dependency_jqueryui <- function() {
 }
 
 #' An HTML dependency using `bootstrap.js`
+#' @param theme the name of the bootstrap theme.
 #' @importFrom htmltools htmlDependency
 #' @export
 html_dependency_bootstrap <- function(theme) {
