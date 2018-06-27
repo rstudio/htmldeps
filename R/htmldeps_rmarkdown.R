@@ -71,7 +71,7 @@ html_dependency_font_awesome <- function() {
   htmlDependency(
     "font-awesome",
     "5.1.0",
-    src = rmarkdown_system_file("rmd/h/fontawesome"),
+    src = system_file("rmd/h/fontawesome"),
     stylesheet = c(
       "css/all.css",
       "css/v4-shims.css")
@@ -86,6 +86,6 @@ html_dependency_ionicons <- function() {
   htmltools::htmlDependency(
     name = "ionicons",
     version = "2.0.1",
-    src = system.file(file = "rmd/h/ionicons"),
+    src = system_file(file = "rmd/h/ionicons"),
     stylesheet = "css/ionicons.min.css")
 }
