@@ -23,7 +23,20 @@ Useful links:
 
 Other contributors:
 \itemize{
-  \item RStudio [copyright holder, funder]
+  \item RStudio, Inc. [copyright holder, funder]
+  \item  jQuery Foundation (jQuery library) [copyright holder]
+  \item  jQuery contributors (jQuery library; authors listed in inst/rmd/h/jquery-AUTHORS.txt) [contributor, copyright holder]
+  \item  jQuery UI contributors (jQuery UI library; authors listed in inst/rmd/h/jqueryui-AUTHORS.txt) [contributor, copyright holder]
+  \item Mark Otto (Bootstrap library) [contributor]
+  \item Jacob Thornton (Bootstrap library) [contributor]
+  \item  Bootstrap contributors (Bootstrap library) [contributor]
+  \item  Twitter, Inc (Bootstrap library) [copyright holder]
+  \item Alexander Farkas (html5shiv library) [contributor, copyright holder]
+  \item Scott Jehl (respond.js library) [contributor, copyright holder]
+  \item Greg Franko (tocify library) [contributor, copyright holder]
+  \item Dave Gandy (Font-Awesome) [contributor, copyright holder]
+  \item Ben Sperry (Ionicons) [contributor]
+  \item  Drifty (Ionicons) [copyright holder]
 }
 
 }

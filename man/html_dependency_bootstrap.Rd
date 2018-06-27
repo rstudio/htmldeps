@@ -6,6 +6,9 @@
 \usage{
 html_dependency_bootstrap(theme)
 }
+\arguments{
+\item{theme}{the name of the bootstrap theme.}
+}
 \description{
 An HTML dependency using `bootstrap.js`
 }
