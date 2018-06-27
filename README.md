@@ -3,6 +3,8 @@
 
 [![Travis build
 status](https://travis-ci.org/rstudio/htmldeps.svg?branch=master)](https://travis-ci.org/rstudio/htmldeps)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/htmldeps)](https://cran.r-project.org/package=htmldeps)
 
 ## Centralized HTML Dependencies with **htmldeps**
 
