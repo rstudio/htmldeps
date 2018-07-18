@@ -1,6 +1,6 @@
 Type: Package
 Package: htmldeps
-Version: 0.1.0
+Version: 0.1.1
 Title: Provides HTML Dependencies for Several Packages
 Description: This package provides several `html_dependency_...()` functions
     to support the following shiny, rmarkdown, flexdashboard, htmlwidgets,
